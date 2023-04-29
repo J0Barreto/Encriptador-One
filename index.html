@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="./css/reset.css/reset.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="./img/Logo.png" alt="logoAlura" class="logo">
+        </header>
+        <main>
+            <section class="text-container">
+                    <div class="text">
+                        <textarea  id="text" cols="20" rows="10" placeholder="Ingresea el texto aqui" class="textarea-encriptar"></textarea>
+                        <div class="content">
+                            <div class="warning">
+                                <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                                <p> Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <div class="button-text">
+                                <button class="button-encriptar" onclick="encritparTexto()" >Encriptar</button>
+                                <button class="button-desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-text">
+                        <div class="content-img-muneco" id="content-disappear">
+                            <img src="./img/texto-no-encontrado.avif" alt="imagen de una persona con una lupa" class="img-buscando"> 
+                            <h2 >Ningún mensaje fue encontrado</h2>
+                            <p> Ingrese el texto que desee encriptar o desencriptar</p>
+                        </div>
+                        <div class="result-content" id="content-button-disappear">
+                            <textarea  id="result" cols="20" rows="10"  class="textarea-desencriptar"></textarea>
+                            <div class="button-result-text">
+                                <button class="button-copy" id="copy" onclick="copiarTexto()">Copiar</button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <script src="https://kit.fontawesome.com/8e7977b3fd.js" crossorigin="anonymous"></script>
+        <script src="./JS/encriptador.js"></script>
+    </body>
+</html>
